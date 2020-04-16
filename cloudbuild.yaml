@@ -1,0 +1,7 @@
+steps:
+  - name: rasa
+    entrypoint: rasa
+    args: ["train"]
+  - name: "gcr.io/cloud-builders/gcloud"
+    args: ["app", "deploy"]
+timeout: "16000s"
