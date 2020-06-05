@@ -1,5 +1,5 @@
 FROM rasa/rasa
-
+USER root
 ENV BOT_ENV=production
 
 COPY . /var/www
